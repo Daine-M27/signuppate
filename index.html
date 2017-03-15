@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+	<img src="logo.png" height="35px" alt="Our Company">
+
+	<form class="sup" action="/signup/" method="post">
+		<h1>Sign Up</h1>
+		<fieldset name="signupform"></fieldset>
+		<label for="email">Email</label>
+		<input type="email" name="email" id=email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]$" placeholder="Email" required/>
+		<label for="Password">Password</label>
+		<input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}">
+		<button type="submit">Sign up</button>
+
+	</form>
+	<p>
+		"Already have an account? " <a href="/login">Log in</a>
+	</p>
+
+</body>
+</html>
